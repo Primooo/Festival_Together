@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT_DIR = os.path.dirname(BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'Festival_Together.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,16 +75,16 @@ WSGI_APPLICATION = 'Festival_Together.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'FT',
-        'USER': '',
-        'PASSWORD': '1234'
-        'HOST' : ''
-        'PORT' : 3306
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'FT',
+#         'USER': 'root',
+#         'PASSWORD': '1234',
+#         'HOST': 'localhost',
+#         'PORT': 3306,
+#     }
+# }
 
 
 # Password validation
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = Asia/Seoul'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
