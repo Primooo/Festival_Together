@@ -75,16 +75,16 @@ WSGI_APPLICATION = 'Festival_Together.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'FT',
-#         'USER': 'root',
-#         'PASSWORD': '1234',
-#         'HOST': 'localhost',
-#         'PORT': 3306,
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db-festival',
+        'USER': 'admin',
+        'PASSWORD': 'vhcnsldj',
+        'HOST': 'db-festival.crw70xingeqx.us-east-1.rds.amazonaws.com',
+        'PORT': 3306,
+    }
+}
 
 
 # Password validation
