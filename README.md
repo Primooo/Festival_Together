@@ -5,10 +5,10 @@ Web Project by Team Fortuneer
 (Terminal) - python3 manage.py runserver
 
 # Bootstrap 적용 완료 (CDN)
-
 참고 페이지 - https://getbootstrap.com/
 
 # Database
+- Environment - Amazon RDS Database (MySQL)
 - Database Name - festival_together
 - User - admin
 - Password - vhcnsldj(포추니어)
