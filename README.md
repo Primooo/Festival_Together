@@ -8,3 +8,9 @@ Web Project by Team Fortuneer
 
 참고 페이지 - https://getbootstrap.com/
 
+# Database
+- Database Name - festival_together
+- User - admin
+- Password - vhcnsldj(포추니어)
+- EndPoint - db-festival.crw70xingeqx.us-east-1.rds.amazonaws.com
+- Port - 3306
