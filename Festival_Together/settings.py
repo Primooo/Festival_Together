@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Festival_Together.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db-festival',
+        'NAME': 'festival_together',
         'USER': 'admin',
         'PASSWORD': 'vhcnsldj',
         'HOST': 'db-festival.crw70xingeqx.us-east-1.rds.amazonaws.com',
