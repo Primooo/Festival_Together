@@ -2,20 +2,6 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
 
-def index(request):
-  return render(request, 'index.html')
-
-def group(request):
-  return render(request, 'group.html')
-
-def festival(request):
-  return render(request, 'festival.html')
-
-def signup(request):
-  return render(request, 'signup.html')
-
-def login(request):
-  return render(request, 'login.html')
 
 def signup(request):
   if request.method == "POST":
@@ -29,8 +15,8 @@ def signup(request):
       auth.login(user)
 
       return redirect('/index/')
-    return redirect('/signup.html')
-  return redirect('/signup.html')
+    return redirect('signup.html')
+  return render(request, 'signup.html')
 
 def login(request):
   if request.method =="POST":
@@ -41,13 +27,15 @@ def login(request):
 
     if user is not None:
       auth.login(request, user)
-      return redirect('/index/')
+      return redirect('/index')
     else:
-      return redirect('/login.html')
+      return redirect('login.html')
+  else:
+    return render(request, 'login.html')
 
 def logout(request):
   auth.logout(request)
-  return redirect('/index/')
+  return redirect('/index')
 
 
 # Create your views here.
