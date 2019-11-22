@@ -5,6 +5,12 @@ from django.contrib import auth
 def index(request):
   return render(request, 'index.html')
 
+def group(request):
+  return render(request, 'group.html')
+
+def festival(request):
+  return render(request, 'festival.html')
+
 def signup(request):
   return render(request, 'signup.html')
 

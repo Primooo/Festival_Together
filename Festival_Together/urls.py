@@ -20,4 +20,8 @@ from users import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('index/', views.index, name='index'),
+    path('festival/', views.festival, name='festival'),
+    path('group/', views.group, name='group'),
+    path('signup/', views.signup, name='signup')
 ]
