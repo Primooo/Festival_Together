@@ -14,3 +14,5 @@ Web Project by Team Fortuneer
 - Password - vhcnsldj(포추니어)
 - EndPoint - db-festival.crw70xingeqx.us-east-1.rds.amazonaws.com
 - Port - 3306
+
+# 테스트용 코드코드코드
